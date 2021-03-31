@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frogger</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- particles -->
+      <canvas id="canvas1"></canvas>
+      <!-- logs and turtles -->
+      <canvas id="canvas2"></canvas>
+      <!-- frog -->
+      <canvas id="canvas3"></canvas>
+      <!-- cars, grass, trees -->
+      <canvas id="canvas4"></canvas>
+      <!--  -->
+      <canvas id="canvas5"></canvas>
+    </div>
+
+    <!-- order matters -->
+
+    <!-- canvas setup, global variables, references to the sprites -->
+    <script src="setup.js"></script>
+    <!-- handle player character -->
+    <script src="frogger.js"></script>
+    <!-- handle dust trail under the character -->
+    <script src="particles.js"></script>
+    <!-- create water ripples -->
+    <script src="ripples.js"></script>
+    <!-- cars, rocks, turtles -->
+    <script src="obstacles.js"></script>
+    <!-- animation loops, event listeners -->
+    <script src="utilities.js"></script>
+  </body>
+</html>
